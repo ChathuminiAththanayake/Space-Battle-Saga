@@ -2,12 +2,12 @@ import pygame
 import os
 from PIL import Image
 
-# --- Pre-initialize mixer for better sound quality ---
+# --- Initialize Pygame mixer for optimized sound playback ---
 pygame.mixer.pre_init(44100, -16, 2, 512)
 pygame.init()
 pygame.font.init()
 
-# --- Window ---
+# --- Game window setup ---
 WIDTH, HEIGHT = 900, 500
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Space Battle SAGA")
@@ -133,7 +133,7 @@ def draw_window(red, yellow, red_bullets, yellow_bullets, red_health, yellow_hea
     pygame.display.update()
 
 
-# --- Movement ---
+# --- Handle spaceship movement ---
 def yellow_handle_movement(keys, yellow):
     if keys[pygame.K_a] and yellow.x - VEL > 0:
         yellow.x -= VEL
@@ -177,7 +177,7 @@ def handle_bullets(yellow_bullets, red_bullets, yellow, red):
             red_bullets.remove(bullet)
 
 
-# --- Graphical Button ---
+# --- Graphical Button --
 def draw_button(surface, text, center, width=300, height=70, base_color=BUTTON_BASE, hover_color=BUTTON_HOVER):
     mouse_pos = pygame.mouse.get_pos()
     rect = pygame.Rect(0, 0, width, height)
