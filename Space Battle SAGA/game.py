@@ -82,7 +82,7 @@ try:
 except EOFError:
     pass
 
-# --- Load end screen GIF (end.gif) ---
+# --- Load the end screen GIF (end.gif) ---
 end_gif = Image.open(os.path.join('Assets', 'end.gif'))
 END_FRAMES = []
 try:
@@ -103,7 +103,7 @@ frame_index = 0
 FRAME_DELAY = 100
 last_update = pygame.time.get_ticks()
 
-# --- Sounds ---
+# --- audios ---
 pygame.mixer.music.load(os.path.join('Assets', 'music.mp3'))
 pygame.mixer.music.set_volume(0.3)
 
@@ -133,7 +133,7 @@ def draw_window(red, yellow, red_bullets, yellow_bullets, red_health, yellow_hea
     pygame.display.update()
 
 
-# --- Handle spaceship movement ---
+# --- Handle spaceship movements ---
 def yellow_handle_movement(keys, yellow):
     if keys[pygame.K_a] and yellow.x - VEL > 0:
         yellow.x -= VEL
@@ -268,7 +268,7 @@ def intro_screen():
         WIN.blit(shadow_text, (title_x + 3, title_y + 3))
         WIN.blit(title_text, (title_x, title_y))
 
-        # Blinking color
+        # Blinking colors
         if now - last_color_change > color_change_time:
             color_index = (color_index + 1) % len(blink_colors)
             last_color_change = now
@@ -300,7 +300,7 @@ def intro_screen():
     return True
 
 
-# --- End screen with Play Again / Quit ---
+# --- End screen with Play Again and Quit options ---
 def end_screen(winner_text):
     global frame_index, last_update
     clock = pygame.time.Clock()
@@ -317,7 +317,7 @@ def end_screen(winner_text):
         current_frame = END_FRAMES[frame_index]
         WIN.blit(current_frame, (0, 0))
 
-        # Display winner at top
+        # Display winner at the top of the screen
         winner_surf = WINNER_FONT.render(winner_text, True, WHITE)
         WIN.blit(winner_surf, (WIDTH // 2 - winner_surf.get_width() // 2, 50))
 
