@@ -300,7 +300,7 @@ def intro_screen():
     return True
 
 
-# --- End screen with Play Again andQuit ---
+# --- End screen with Play Again and Quit ---
 def end_screen(winner_text):
     global frame_index, last_update
     clock = pygame.time.Clock()
