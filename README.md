@@ -1,19 +1,19 @@
-Space Battle Saga: A 2D Multiplayer Shooting Game
+# Space Battle Saga: A 2D Multiplayer Shooting Game
 
-Project Overview
+## Project Overview
 
-Project Title & Description
+## Project Title & Description
 
 Space Battle Saga is a 2D shooting game developed using Python and Pygame. The game allows players to control spaceships in either Single Player mode (vs AI) or Dual Player mode (local multiplayer). Players aim to shoot down their opponent while managing movement, bullets, and health. The project demonstrates game mechanics, graphics handling, sound integration, and user interaction through a fun and engaging space battle.
 
-Objectives
+## Objectives
 
 •	To design and implement a 2D shooting game using Python and Pygame.
 •	To provide single-player mode with AI and dual-player mode for interactive gameplay.
 •	To integrate graphics, animations, and sound effects for an enhanced user experience.
 •	To apply principles of game mechanics, collision detection, and health tracking.
 
-Technology Stack
+## Technology Stack
 
 •	Programming Language: Python 3  
 •	Game Development Library: Pygame  
@@ -24,7 +24,7 @@ Technology Stack
 •	Project Management: Agile methodology with GitHub issue tracking & pull requests  
 •	Platform: Cross-platform (Windows, Linux, macOS)  
 
-Installation	
+## Installation	
 
 1) Clone the repository
 git clone < repository- url >
@@ -34,7 +34,7 @@ pip install pygame pillow
 3) Run the game
 python game.py
 
-Project Structure
+## Project Structure
 
 Space-Battle-Saga/
 │── Assets/               # Game images, GIFs, sounds
@@ -52,22 +52,24 @@ Space-Battle-Saga/
 │── game.py               # Main game file
 │── README.md             # Project documentation
 
-Controls
 
-	Yellow Player
+## Controls
+
+###	Yellow Player
 •	W = Up
 •	S = Down
 •	A = Left
 •	D = Right
 •	Left Ctrl = Shoot
-	Red Player
+
+###	Red Player
 •	↑ = Up
 •	↓ = Down
 •	← = Left
 •	→ = Right
 •	Right Ctrl = Shoot
 
-Group Contribution 
+## Group Contribution 
 
 Team Member	Registration No.	Index No.	Contribution
 L.B.K.B. Sewwandi	ICT/2022/019	5626	Game Mechanics & Core Logic
@@ -76,7 +78,7 @@ D.D.Liyanage	ICT/2022/037	5643	Audio & Sound Effects
 H.M.A.M.Herath	ICT/2022/053	5659	User Interface & Experience (UI/UX)
 A.M.C.M Aththanayake	ICT/2022/131	5732	Testing & Documentation
 
-Future Improvements
+## Future Improvements
 
 •	Online multiplayer mode
 •	Scoreboard & ranking system
