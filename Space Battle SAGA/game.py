@@ -177,7 +177,7 @@ def handle_bullets(yellow_bullets, red_bullets, yellow, red):
             red_bullets.remove(bullet)
 
 
-# --- Graphical Button ---
+# --- Graphical Button --
 def draw_button(surface, text, center, width=300, height=70, base_color=BUTTON_BASE, hover_color=BUTTON_HOVER):
     mouse_pos = pygame.mouse.get_pos()
     rect = pygame.Rect(0, 0, width, height)
