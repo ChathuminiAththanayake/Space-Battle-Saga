@@ -12,7 +12,7 @@ WIDTH, HEIGHT = 900, 500
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Space Battle SAGA")
 
-# --- Colors ---
+# --- Colors used---
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 RED = (255, 0, 0)
@@ -103,7 +103,7 @@ frame_index = 0
 FRAME_DELAY = 100
 last_update = pygame.time.get_ticks()
 
-# --- audios ---
+# --- audios used ---
 pygame.mixer.music.load(os.path.join('Assets', 'music.mp3'))
 pygame.mixer.music.set_volume(0.3)
 
@@ -156,7 +156,7 @@ def red_handle_movement(keys, red):
         red.y += VEL
 
 
-# --- Bullet handling ---
+# --- Bullets handling for both spaceships---
 def handle_bullets(yellow_bullets, red_bullets, yellow, red):
     for bullet in yellow_bullets[:]:
         bullet.x += BULLET_VEL
@@ -183,7 +183,7 @@ def draw_button(surface, text, center, width=300, height=70, base_color=BUTTON_B
     rect = pygame.Rect(0, 0, width, height)
     rect.center = center
 
-    # Shadow
+    # Shadows
     shadow_rect = rect.copy()
     shadow_rect.move_ip(5, 5)
     pygame.draw.rect(surface, BLACK, shadow_rect, border_radius=15)
